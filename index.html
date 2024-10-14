@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <section class="music">
+        <!-- Кнопка для воспроизведения музыки -->
+        <img id="play-button" src="img/music-mute.png" alt="music">
+        <!-- Тег audio для воспроизведения музыки -->
+        <audio id="background-music" loop>
+            <source src="music/Warm Sleep.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section class="quiz" id="quiz">
+        <div class="quiz-questions" id="questions"></div>
+
+        <div class="quiz-indicator" id="indicator">1/10</div>
+
+        <div class="quiz-results" id="results">
+            <div class="quiz-results-item">
+                <div class="quiz-results-item__questions">Вопрос 1</div>
+                <ul class="quiz-results-item__answers">
+                    <li>Ответ 1</li>
+                    <li>Ответ 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quiz-controls">
+            <button class="btn-next" id="btn-next" disabled>Дальше</button>
+            <button class="btn-restart" id="btn-restart">Повторить</button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
